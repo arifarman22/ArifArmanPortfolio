@@ -29,11 +29,16 @@ function ParticleField() {
 
   useFrame((state, delta) => {
     if (pointsRef.current) {
+      // Continuous base rotation
       pointsRef.current.rotation.x -= delta * 0.03;
       pointsRef.current.rotation.y -= delta * 0.05;
       
-      // Slight floating effect
-      pointsRef.current.position.y = Math.sin(state.clock.elapsedTime * 0.5) * 0.1;
+      // Mouse influence - smooth drift
+      const targetX = state.pointer.x * 0.3;
+      const targetY = -state.pointer.y * 0.3;
+      
+      pointsRef.current.position.x = THREE.MathUtils.lerp(pointsRef.current.position.x, targetX, 0.05);
+      pointsRef.current.position.y = THREE.MathUtils.lerp(pointsRef.current.position.y, targetY + Math.sin(state.clock.elapsedTime * 0.5) * 0.1, 0.05);
     }
   });
 
