@@ -5,23 +5,23 @@ import { motion, useScroll, useTransform } from "framer-motion";
 
 const experiences = [
   {
-    role: "Digital Officer & Developer",
-    company: "IndoAsia Trading LTD",
+    role: "Digital Officer & Lead Developer",
+    company: "IndoAsia Trading LTD, Dhaka",
     period: "Jun 2025 – Dec 2025",
     description: [
-      "Developed and maintained company web platforms using React.js.",
-      "Built responsive UI components and improved user experience across devices.",
-      "Managed digital systems including order workflows and web updates.",
+      "Led full digital operations including web platform development, order management systems, and IT infrastructure for a mid-sized trading company.",
+      "Built and deployed full-stack web applications using React.js and Next.js; integrated third-party APIs and automated key business workflows.",
+      "Managed data systems and implemented scalable digital solutions to support the company's growing operations.",
     ],
   },
   {
     role: "Frontend Developer",
-    company: "SoftVence",
-    period: "Jan 2026 - Feb 2026",
+    company: "SoftVence, Dhaka",
+    period: "Jan 2026",
     description: [
-      "Built and maintained responsive UI components using React.js and Next.js, ensuring cross-browser compatibility and mobile-first design.",
-      "Developed reusable component libraries using React hooks and props.",
-      "Utilized Next.js for server-side rendering and optimized page load performance.",
+      "Built and maintained responsive UI components using React.js and Next.js with cross-browser compatibility and mobile-first design.",
+      "Developed reusable component libraries with React hooks; utilized Next.js SSR for optimized page load performance in production apps.",
+      "Collaborated with the team via Git, code reviews, and clean code best practices; translated UI/UX specs into pixel-accurate interfaces.",
     ],
   },
 ];
@@ -52,15 +52,31 @@ export default function About() {
             </h2>
             <div className="space-y-6 text-gray-400 text-lg">
               <p>
-                I am a Junior Full Stack Software Engineer with hands-on experience building and deploying modern web applications. My expertise lies in creating robust, scalable solutions using React, Next.js, and Node.js.
+                AI Engineer and Full Stack Developer with hands-on experience building production-grade intelligent applications. Skilled in LLM integration, RAG pipelines, vector search, NLP, and Python-based ML frameworks.
               </p>
               <p>
-                From developing responsive UIs and REST APIs to integrating real-world features like authentication, search, and AI-driven data visualization, I focus on delivering seamless end-to-end user experiences.
+                Strong software engineering foundation with React, Next.js, and Node.js — capable of designing and deploying complete AI-powered systems end-to-end.
               </p>
+              <div className="pt-6 grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div>
+                  <div className="uppercase tracking-widest text-sm font-semibold text-white mb-2">Education</div>
+                  <div className="text-xl text-gray-300">B.Sc. in CSE</div>
+                  <div className="text-gray-500">Daffodil Int. University • 2025</div>
+                  <div className="text-gray-500">CGPA: 3.46 / 4.0</div>
+                </div>
+                <div>
+                  <div className="uppercase tracking-widest text-sm font-semibold text-white mb-2">Certifications</div>
+                  <div className="text-gray-300">Full Stack Web Dev — FreeCodeCamp</div>
+                  <div className="text-gray-300">Full Stack Java Dev — LinkedIn</div>
+                </div>
+              </div>
               <div className="pt-6">
-                <div className="uppercase tracking-widest text-sm font-semibold text-white mb-2">Education</div>
-                <div className="text-xl text-gray-300">B.Sc. in Computer Science & Engineering</div>
-                <div className="text-gray-500">Daffodil International University • 2025</div>
+                <div className="uppercase tracking-widest text-sm font-semibold text-white mb-2">Activities</div>
+                <ul className="text-gray-500 space-y-1">
+                  <li>• Executive Member — DIU CPC</li>
+                  <li>• Volunteer — ICPC Dhaka Regional</li>
+                  <li>• Cricket Player — DIU Cricket Team</li>
+                </ul>
               </div>
             </div>
           </motion.div>

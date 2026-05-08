@@ -4,20 +4,32 @@ import { motion } from "framer-motion";
 
 const skills = [
   {
+    category: "AI / ML Core",
+    items: ["RAG (Retrieval-Augmented Generation)", "LLM Integration", "NLP Pipelines", "Prompt Engineering", "Vector Search", "ML Model Integration"],
+  },
+  {
+    category: "AI Libraries & APIs",
+    items: ["PyTorch", "sentence-transformers", "HuggingFace Inference API", "OpenAI API", "Pinecone", "Pandas", "NumPy", "SciPy", "Plotly"],
+  },
+  {
+    category: "Backend",
+    items: ["FastAPI", "Flask", "Node.js", "Express.js", "REST APIs", "Python"],
+  },
+  {
     category: "Frontend",
-    items: ["React.js", "Next.js", "TypeScript", "JavaScript", "Tailwind CSS"],
+    items: ["React.js", "Next.js", "TypeScript", "JavaScript (ES6+)", "Tailwind CSS", "HTML5", "CSS3"],
   },
   {
-    category: "Backend & DB",
-    items: ["Node.js", "Express.js", "FastAPI", "PostgreSQL", "Prisma ORM", "MongoDB"],
+    category: "Database",
+    items: ["PostgreSQL", "MySQL", "MongoDB", "Neon (Serverless)", "Prisma ORM"],
   },
   {
-    category: "AI & ML",
-    items: ["Pandas", "PyTorch", "OpenAI API", "Pinecone", "Plotly","Scikit-learn", "TensorFlow", "Keras"],
+    category: "Security",
+    items: ["JWT Auth", "bcrypt / PBKDF2 hashing", "httpOnly cookies", "Rate Limiting", "XSS Sanitization", "Google OAuth 2.0"],
   },
   {
-    category: "Tools & Other",
-    items: ["Git", "Vercel", "Zustand", "JWT Auth", "ShadCN/UI", "REST APIs"],
+    category: "Tools & Automation",
+    items: ["Git", "GitHub", "Vercel", "Render", "Docker (basic)", "n8n", "Zapier", "OpenClaw"],
   },
 ];
 

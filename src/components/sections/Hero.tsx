@@ -35,7 +35,7 @@ export default function Hero() {
           transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
           className="text-xl md:text-3xl text-gray-400 font-light max-w-3xl mb-12"
         >
-          Full Stack Software Engineer building high-performance, intelligent web applications.
+          Full Stack Developer | AI Engineer building high-performance, intelligent web applications.
         </motion.p>
 
         <motion.div
